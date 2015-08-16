@@ -6,9 +6,12 @@
     "lint": "npm run eslint",
     "test": "true",
     "watch": "true",
-    "build": "true",
+    "clean": "rimraf ./dist",
+    "build": "npm run clean && mkdirp ./dist/css ./dist/js && npm run html-minifier && npm run clean-css && npm run uglifyjs",
     "-----": "----------------------------------------------------------------",
-    "eslint": "eslint ./src/js/*.js"
+    "html-minifier": "true",
+    "clean-css": "true",
+    "uglifyjs": "true"
   },
   "author": {
     "name": "keik",
@@ -17,6 +20,12 @@
   },
   "license": "MIT",
   "devDependencies": {
-    "eslint": "^1.1.0"
+    "clean-css": "^3.3.9",
+    "gulp": "^3.9.0",
+    "html-minifier": "^0.7.2",
+    "mkdirp": "^0.5.1",
+    "rimraf": "^2.4.2",
+    "through2": "^2.0.0",
+    "uglifyjs": "^2.4.10"
   }
 }
