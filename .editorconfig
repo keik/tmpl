@@ -1,0 +1,38 @@
+# editorconfig.org
+
+root = true
+
+[*]
+indent_style = space
+indent_size = 2
+tab_width = 2
+# end_of_line = lf
+insert_final_newline = true
+trim_trailing_whitespace = true
+
+[*.html]
+indent_style = space
+indent_size = 2
+
+[*.js]
+indent_style = space
+indent_size = 2
+
+[*.java]
+indent_style = space
+indent_size = 4
+
+[*.css,*.less]
+indent_style = space
+indent_size = 2
+
+[*.el]
+indent_style = space
+
+[*.xml]
+indent_style = space
+indent_size = 2
+
+[*.jsp]
+indent_style = space
+indent_size = 2

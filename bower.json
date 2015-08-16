@@ -1,0 +1,14 @@
+{
+  "name": "dummy",
+  "authors": [
+    "keik <k4t0.kei@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
